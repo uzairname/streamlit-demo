@@ -1,13 +1,9 @@
 import streamlit as st
 
-st.title("tita")
+# You probably didn't expect this to be only a few lines of code long!
+st.title("AI Club Streamlit Demo")
 
-st.header("Math")
+st.write("Happy Halloween! Follow [these steps](https://msu-ai.notion.site/Deploying-AI-Projects-with-Streamlit-b10903703adf45b6b546fc3c050cb893) to view the source code and make this page your own.")
+st.write("Visit [the documentation](https://docs.streamlit.io/) to learn more about streamlit")
 
-a = st.number_input("Enter a number", min_value=0, max_value=100, step=1)
-b = st.slider("Another number")
-
-st.latex(f"{a} x^{{" + str(b) + "}")
-
-
-
+# Streamlit is simple, yet feature rich

@@ -4,13 +4,12 @@ from matplotlib import pyplot as plt
 from sklearn import tree
 from sklearn.model_selection import train_test_split
 
-dataframe = pd.read_csv("titanic.csv", index_col=0)
 st.header("Data Analysis")
 st.write("Titanic dataset, and the decision tree")
+dataframe = pd.read_csv("titanic.csv", index_col=0)
 st.write(dataframe)
 
-
-survived = dataframe["survived"]==1
+survived = dataframe["survived"] == 1
 features = dataframe.drop(["survived"], axis=1)
 features, features_test, survived, survived_test = train_test_split(features, survived, test_size = 0.3)
 
