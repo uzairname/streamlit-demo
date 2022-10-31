@@ -8,7 +8,7 @@ st.write(
     "Upload an image below and I will annotate the faces in the image using [MediaPipe](https://mediapipe.dev/)."
 )
 
-file = st.file_uploader("Upload a file")
+file = st.camera_input("Take a picture")
 
 if file is not None:
     # Display original image

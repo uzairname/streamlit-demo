@@ -5,3 +5,4 @@ pandas~=1.5.1
 numpy~=1.23.4
 mediapipe~=0.8.11
 keybert~=0.6.0
+transformers~=4.23.1
